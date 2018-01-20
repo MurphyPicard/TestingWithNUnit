@@ -15,13 +15,20 @@ namespace FirstStudio
         {
             MyMath math = new MyMath();
             Assert.AreEqual(77, math.Add(32, 45));
+            Assert.AreEqual(66, math.Add(33, 33));
+            Assert.AreEqual(0, math.Add(-1, 1));
+            Assert.AreEqual(0, math.Add(0, 0));
+            Assert.AreEqual(1, math.Add(0, 1));
         }
 
         [TestCase]
         public void Sub()
         {
             MyMath math = new MyMath();
-            Assert.AreEqual(-13, math.Sub(32, 45));
+            Assert.AreEqual(-13, math.Sub(0, 13));
+            Assert.AreEqual(-13, math.Sub(-6, 7));
+            Assert.AreEqual(-13, math.Sub(13, 26));
+            Assert.AreEqual(-13, math.Sub(-13, 0));
         }
 
         [TestCase]

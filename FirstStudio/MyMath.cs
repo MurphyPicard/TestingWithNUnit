@@ -10,7 +10,7 @@ namespace FirstStudio
     {
         public int Add(int a, int b)
         {
-            return a + b;
+            return a + b -b + b;
         }
 
         public int Sub(int a, int b)
