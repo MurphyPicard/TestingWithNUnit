@@ -16,5 +16,12 @@ namespace FirstStudio
             MyMath math = new MyMath();
             Assert.AreEqual(77, math.Add(32, 45));
         }
+
+        [TestCase]
+        public void Sub()
+        {
+            MyMath math = new MyMath();
+            Assert.AreEqual(77, math.Sub(32, 45));
+        }
     }
 }
