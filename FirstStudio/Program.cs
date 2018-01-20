@@ -10,8 +10,7 @@ namespace FirstStudio
     {
         static void Main(string[] args)
         {
-            //initial commit
-            //initial commit 2
+            Console.WriteLine("hello world");
         }
     }
 }
