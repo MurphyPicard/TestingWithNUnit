@@ -37,5 +37,33 @@ namespace FirstStudio
             MyMath math = new MyMath();
             Assert.AreEqual(12, math.Div(-48, -4));
         }
+
+        [TestCase]
+        public void AddOne()
+        {
+            var math = new NewMath();
+            Assert.AreEqual(77, math.AddOne(32));
+        }
+
+        [TestCase]
+        public void SubOne()
+        {
+            var math = new NewMath();
+            Assert.AreEqual(77, math.SubOne(32));
+        }
+
+        [TestCase]
+        public void MulTwo()
+        {
+            var math = new NewMath();
+            Assert.AreEqual(77, math.MulTwo(32));
+        }
+
+        [TestCase]
+        public void DivTwo()
+        {
+            var math = new NewMath();
+            Assert.AreEqual(77, math.DivTwo(32));
+        }
     }
 }
