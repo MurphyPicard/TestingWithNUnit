@@ -20,7 +20,7 @@ namespace FirstStudio
 
         public int Mul(int a, int b)
         {
-            return a * b;
+            return a * b / b * b;
         }
 
         public int Div(int a, int b)
